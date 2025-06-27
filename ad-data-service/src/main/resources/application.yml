@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ad-data-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8081
+facebook:
+  app-id: 2151381988676423
+  app-secret: e493b4df857bf0796b49a312c63f4ac2
+  access-token: EAAekq6c2E0cBO5Hccja6Q0u57Ma5KGIMxmKlUzQDswBCZAew62AHHhYl5ZCuplQBY8UdxloclZADhKBscmqDDLEp7kxrYWm5Y4AOYfv6h4nedzd7dEWgZAXt6B80itbd45AwCKz0a8ZCteXmvfJT6FYJIo3eoQGq9YHiDw6S0vByQfSsy2WMr2Lez6zEbnCprieK3QFrrR3kRHpVp7RZBPsWWR

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: ad-data-service
+          uri: lb://ad-data-service
+          predicates:
+            - Path=/ads/**
+        - id: data-storage-service
+          uri: lb://data-storage-service
+          predicates:
+            - Path=/reports/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8080

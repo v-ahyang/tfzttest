@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: data-storage-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/tfzt?useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8082
