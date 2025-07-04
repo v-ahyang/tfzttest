@@ -1,4 +1,4 @@
-package com.example.datastorageservice;
+package com.example.addataservice.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
